@@ -79,7 +79,7 @@ def read(request, resource_type, id, *args, **kwargs):
 
     interaction_type = 'read'
 
-    read = generic_read(request, interaction_type, id, vid, *args, **kwargs)
+    read = generic_read(request, interaction_type, resource_type, id, *args, **kwargs)
 
     return read
 
